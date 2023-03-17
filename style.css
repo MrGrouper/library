@@ -115,11 +115,15 @@ border-radius: 5px;
     background-color: red;
 }
 
+.empty{
+    text-align: center;
+    padding-top: 30px;
+}
+
 tr:nth-child(even) {background-color: #f2f2f2;}
 
 #bookTableBody>tr:hover {
-    background-color: var(--secondary-dark-active);
-    color: var(--primary-light)
+    background-color: rgb(224, 224, 224)
 }
 
 .btn:hover{

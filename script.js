@@ -55,7 +55,7 @@ function makeTable(){
     if (myLibrary.length > 0){
         $emptyTable.style.display = "none";
     }
-    else{$emptyTable.style.display = "initial"}
+    else{$emptyTable.style.display = "inherit"}
     
     $tableBody.innerHTML = "";
     
