@@ -1,0 +1,127 @@
+:root {
+    --primary-light: #ddd;
+    --primary-dark: #222831;
+    --secondary-dark: #393e46;
+    --secondary-dark-hover: #4a4f57;
+    --secondary-dark-active: #5b5f68;
+    --header: #111720;
+    --primary-Blue: #07c;
+  }
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: roboto, sans-serif;
+    margin: 0;
+    width: 100vw;
+    
+    
+}
+
+.header{
+background-color: var(--header);
+color: var(--primary-light);
+font-size: 60px;
+padding: 2rem;
+}
+
+.main{
+    padding: 2rem;
+}
+
+.formContainer{
+    padding: 0px 0px 20px 0px;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 0px 0px 10px 0px;
+}
+
+input, label{
+    display: block;
+}
+
+.formBlock {
+    width: clamp(250px, 2rem, 350px)
+}
+
+input{
+    width: 100%;
+    height: 30px;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+
+select{
+    height: 35px;
+    width: 100px;
+}
+
+.submitButton{
+    height: 35px;
+    background-color: rgb(106, 184, 240);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    width: 150px;
+}
+
+.tableContainer{
+    overflow-x:auto;
+}
+table{
+    width: 100%;
+    border-spacing: 0px;
+}
+#bookTableBody>tr>:nth-child(1){
+    min-width: 200px;
+}
+#bookTableBody>tr>:nth-child(2){
+    min-width: 125px;
+}
+
+#bookTableBody>tr>:nth-child(3){
+    width: 100px;
+    text-align: center;
+}
+#bookTableBody>tr>:nth-child(4){
+    width: 100px;
+    text-align: center;
+}
+
+#bookTableBody>tr>:nth-child(5){
+    text-align: center;
+}
+
+th, td{
+    border-bottom: 1px solid #ddd;
+}
+td{
+    height: 50px;
+}
+button{
+border: none;
+border-radius: 5px;
+}
+.read {
+    background-color: green;
+    
+}
+
+.notRead{
+    background-color: red;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+#bookTableBody>tr:hover {
+    background-color: var(--secondary-dark-active);
+    color: var(--primary-light)
+}
+
+.btn:hover{
+    background-color: var(--secondary-dark-hover);
+}

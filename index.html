@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <titleLibrary</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class = "header">
+        <div class = "headerTitle">Library</div>
+    </div>
+    <div class = "main">
+
+    <div class ="formContainer">
+        <div class="inputSection">
+        <h3>Add new book:</h3>
+        <form class = "addBookForm">
+            <div class="formBlock">
+            <label>Title</label>
+            <input
+            class = "input"
+            type="text"
+            id="title"
+            placeholder="Title"
+            required
+            maxlength="100"
+            />
+        </div>
+        <div class="formBlock">
+            <label>Author</label>
+            <input
+            class = "input"
+            type="text"
+            id="author"
+            placeholder="Author"
+            required
+            maxlength="100"
+            />
+           </div>
+           <div class="formBlock">
+            <label>Pages</label>
+            <input
+            class = "input"
+            type="number"
+            id="pages"
+            placeholder="# of pages"
+            required
+            max="50000"
+            />
+        </div>
+        <div class="formBlock">
+                <label>Have you read it?</label>
+                <select name="status" id="status" required>
+                    <option value="" selected disabled hidden></option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+            <div class="formSubmit"></div>
+            <button class="btn submitButton" type="submit">Add to Library</button>
+        </div>
+        </form>
+        <div class ="tableContainer">
+            <table class="bookTable" id = "#bookTable">
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Pages</th>
+                    <th>Status</th>
+                    <th></th>
+                </tr>
+                <tbody id="bookTableBody"></tbody>
+            </table>
+            <div class="empty" id="empty">Your table is currently empty</div>
+        </div>
+    </div>
+</div>
+
+    
+</body>
+</html>
